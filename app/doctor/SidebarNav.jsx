@@ -2,8 +2,10 @@
 
 import React from "react";
 import { Sidebar, SidebarHeader, SidebarContent, SidebarFooter, SidebarRail } from "@/components/ui/sidebar";
-import { Cog, LogOut, ShieldUser } from "lucide-react"
+import { Cog, LogOut, ShieldUser, ScanHeart, Hospital, FileChartPie, CalendarHeart, Users, MessageCircleHeart, Pill } from "lucide-react"
 import Profile from "./Profile";
+import Forms from "./Forms";
+import Patients from "./Patients";
 
 const data = {
   profile: [
@@ -20,6 +22,59 @@ const data = {
       logo: LogOut
     },
   ],
+  forms: [
+    {
+      title: "FORMS",
+      url: "#",
+      isActive: true,
+      items: [
+        {
+          name: "Create Forms",
+          url: "#",
+          icon: ScanHeart,
+        },
+        {
+          name: "View Forms",
+          url: "#",
+          icon: Hospital,
+        },
+        {
+          name: "View Prescriptions",
+          url: "#",
+          icon: Pill
+        },
+        {
+          name: "View Diet Charts",
+          url: "#",
+          icon: FileChartPie
+        }
+      ]
+    },    
+  ],
+  patients: [
+    {
+      title: "PATIENTS",
+      url: "#",
+      isActive: true,
+      items: [
+        {
+          name: "Appointments",
+          url: "#",
+          icon: CalendarHeart
+        },
+        {
+          name: "My Patients",
+          url: "#",
+          icon: Users
+        },
+        {
+          name: "Chats",
+          url: "#",
+          icon: MessageCircleHeart
+        }
+      ]
+    }
+  ]
 }
 
 export default function SidebarNav({ ...props }) {
@@ -29,7 +84,10 @@ export default function SidebarNav({ ...props }) {
         <SidebarHeader>
           <Profile profile={data.profile} />
         </SidebarHeader>
-        <SidebarContent></SidebarContent>
+        <SidebarContent>
+          <Forms forms={data.forms} />
+          <Patients patients={data.patients} />
+        </SidebarContent>
         <SidebarFooter></SidebarFooter>
         <SidebarRail />
       </Sidebar>
