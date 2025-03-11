@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Sidebar, SidebarHeader, SidebarContent, SidebarFooter, SidebarRail } from "@/components/ui/sidebar";
-import { Cog, LogOut, ShieldUser, ScanHeart, Hospital, FileChartPie, CalendarHeart, Users, MessageCircleHeart, Pill } from "lucide-react"
+import { Cog, LogOut, ShieldUser, ScanHeart, Hospital, FileChartPie, CalendarHeart, Users, MessageCircleHeart, Pill, HeartPulse, SquareActivity, Ambulance} from "lucide-react"
 import Profile from "./Profile";
 import Forms from "./Forms";
 import Patients from "./Patients";
@@ -47,6 +47,11 @@ const data = {
           name: "View Diet Charts",
           url: "#",
           icon: FileChartPie
+        },
+        {
+          name: "Medical Team",
+          url: "#",
+          icon: Ambulance
         }
       ]
     },    
@@ -71,6 +76,16 @@ const data = {
           name: "Chats",
           url: "#",
           icon: MessageCircleHeart
+        },
+        {
+          name: "Medical History",
+          url: "#",
+          icon: SquareActivity
+        },
+        {
+          name: "Health Plans",
+          url: "#",
+          icon: HeartPulse
         }
       ]
     }

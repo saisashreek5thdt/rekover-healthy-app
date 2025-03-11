@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Sidebar, SidebarHeader, SidebarContent, SidebarFooter, SidebarRail } from "@/components/ui/sidebar";
-import { Cog, LogOut, ShieldUser, ScanHeart, Hospital, FileChartPie, CalendarHeart, Users, MessageCircleHeart, Pill } from "lucide-react"
+import { Cog, LogOut, ShieldUser, ScanHeart, Hospital, FileChartPie, CalendarHeart, Users, MessageCircleHeart, Pill, History, ChartCandlestickIcon, HeartPulse, BookOpenText} from "lucide-react"
 import Profile from "./Profile";
 import Forms from "./Forms";
 import Patients from "./Patients";
@@ -29,6 +29,11 @@ const data = {
       isActive: true,
       items: [
         {
+          name: "Create Profile",
+          url: "#",
+          icon: Cog,
+        },
+        {
           name: "Create Forms",
           url: "#",
           icon: ScanHeart,
@@ -47,6 +52,11 @@ const data = {
           name: "View Diet Charts",
           url: "#",
           icon: FileChartPie
+        },
+        {
+          name: "Summary",
+          url: "#",
+          icon: BookOpenText
         }
       ]
     },    
@@ -63,6 +73,11 @@ const data = {
           icon: CalendarHeart
         },
         {
+          name: "Create Appointments",
+          url: "#",
+          icon: CalendarHeart
+        },
+        {
           name: "My Patients",
           url: "#",
           icon: Users
@@ -71,6 +86,21 @@ const data = {
           name: "Chats",
           url: "#",
           icon: MessageCircleHeart
+        },
+        {
+          name: "Payment History",
+          url: "#",
+          icon: History
+        },
+        {
+          name: "Payment Status",
+          url: "#",
+          icon: ChartCandlestickIcon
+        },
+        {
+          name: "Health Plans",
+          url: "#",
+          icon: HeartPulse
         }
       ]
     }

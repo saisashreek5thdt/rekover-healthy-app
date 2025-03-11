@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Sidebar, SidebarHeader, SidebarContent, SidebarFooter, SidebarRail } from "@/components/ui/sidebar";
-import { Cog, LogOut, ShieldUser, ScanHeart, Hospital, FileChartPie, CalendarHeart, Users, MessageCircleHeart, Pill } from "lucide-react"
+import { Cog, LogOut, ShieldUser, ScanHeart, Hospital, FileChartPie, CalendarHeart, Users, MessageCircleHeart, Pill , HeartHandshake,SquareActivity} from "lucide-react"
 import Profile from "./Profile";
 import Forms from "./Forms";
 import Patients from "./Patients";
@@ -61,6 +61,16 @@ const data = {
           name: "Appointments",
           url: "#",
           icon: CalendarHeart
+        },
+        {
+          name: "Health Plan Details",
+          url: "#",
+          icon: HeartHandshake
+        },
+        {
+          name: "Medical History",
+          url: "#",
+          icon: SquareActivity
         },
         {
           name: "My Patients",
