@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logo from "@/app/logo.svg"; // Replace with your logo path
+import logo from "@/app/assets/logo/logo.svg"; // Replace with your logo path
 
 // Import social icons from react-icons
 import { FaFacebookF, FaInstagram, FaYoutube, FaXTwitter } from "react-icons/fa6";

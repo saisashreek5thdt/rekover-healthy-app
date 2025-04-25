@@ -58,7 +58,7 @@ export default function StepsSection() {
       <section className="min-h-screen flex items-center justify-center bg-white px-4">
         <div className="max-w-7xl w-full">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
               4 Easy Steps And Get Your Solution
             </h2>
             <p className="text-gray-600 mt-2">

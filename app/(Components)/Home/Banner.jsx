@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import banner from "@/app/banner.png";
+import banner from "@/app/assets/banner/banner.png";
 import Link from "next/link";
 
 export default function Banner() {

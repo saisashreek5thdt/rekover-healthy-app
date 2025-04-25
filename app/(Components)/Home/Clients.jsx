@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import client1 from "@/app/sponsor1.svg";
-import client2 from "@/app/sponsor2.svg";
-import client3 from "@/app/sponsor3.svg";
-import client4 from "@/app/sponsor4.svg";
-import client5 from "@/app/sponsor5.svg";
-import client6 from "@/app/sponsor6.svg";
+import client1 from "@/app/assets/clients/sponsor1.svg";
+import client2 from "@/app/assets/clients/sponsor2.svg";
+import client3 from "@/app/assets/clients/sponsor3.svg";
+import client4 from "@/app/assets/clients/sponsor4.svg";
+import client5 from "@/app/assets/clients/sponsor5.svg";
+import client6 from "@/app/assets/clients/sponsor6.svg";
 
 const clients = [client1, client2, client3, client4, client5, client6];
 

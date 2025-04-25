@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import logo from "@/app/logo.svg";
+import logo from "@/app/assets/logo/logo.svg";
 import Link from "next/link";
 import { KeyRound, UserPlus, Menu, X } from "lucide-react";
 

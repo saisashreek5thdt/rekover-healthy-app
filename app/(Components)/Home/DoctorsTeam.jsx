@@ -2,14 +2,26 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import team from "@/app/banner.png";
+import team1 from "@/app/assets/team/team-1.png";
+import team2 from "@/app/assets/team/team-2.png";
+import team3 from "@/app/assets/team/team-3.png";
 
 const doctors = [
   // Total 12 dummy entries
-  ...Array(12).fill({
+  ...Array(4).fill({
     name: "Name",
     role: "Designation",
-    image: team, // Use random image
+    image: team1, // Use random image
+  }),
+  ...Array(4).fill({
+    name: "Name",
+    role: "Designation",
+    image: team2, // Use random image
+  }),
+  ...Array(4).fill({
+    name: "Name",
+    role: "Designation",
+    image: team3, // Use random image
   }),
 ];
 
@@ -43,7 +55,7 @@ export default function DoctorsTeam() {
               <p className="text-sm text-teal-500 font-semibold">
                 MEET OUR DOCTORS
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-1">
+              <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mt-1">
                 We&apos;re Dedicated To <br /> Your Well-Being
               </h2>
             </div>
